@@ -45,7 +45,7 @@ These are the actual UI screenshots included with the project.
 - `src/backend/` - database, detection, evaluation, and LLM services
 - `src/ui/pages/` - all desktop UI pages
 - `assets/` - icons, prompt template, and ML model files
-- `data/dataset/` - log datasets used for evaluation
+- `data/` - runtime storage for local logs and databases
 - `reports/` - generated evaluation and benchmark outputs
 - `assets/ss/` - README screenshots
 
@@ -110,7 +110,7 @@ If you are using the project virtual environment directly:
 
 ## Evaluation
 
-Run a quick sample evaluation:
+Run a quick sample evaluation with your own dataset:
 
 ```bash
 python evaluate_detector.py --input data/logs/evaluation_sample.csv --require-ml
@@ -120,7 +120,7 @@ Run on a labeled dataset:
 
 ```bash
 python evaluate_detector.py \
-  --input "data/dataset/labeled_data/normalized/HPC_2k_enhanced.csv" \
+  --input "path/to/your_dataset.csv" \
   --log-column Content \
   --label-column AnomalyLabel \
   --require-ml
@@ -133,11 +133,8 @@ Run detector benchmarks:
 ```bash
 python benchmark_detector.py \
   --inputs \
-  "data/dataset/labeled_data/normalized/HPC_2k_enhanced.csv" \
-  "data/dataset/labeled_data/normalized/Windows_2k_enhanced.csv" \
-  "data/dataset/labeled_data/normalized/Apache_2k_enhanced.csv" \
-  "data/dataset/labeled_data/normalized/Linux_2k_enhanced.csv" \
-  "data/dataset/labeled_data/normalized/Zookeeper_2k_enhanced.csv" \
+  "path/to/dataset_1.csv" \
+  "path/to/dataset_2.csv" \
   --log-column Content \
   --runs 5 \
   --warmup-runs 1 \
@@ -173,5 +170,6 @@ The repository includes a shell script for the full evaluation and benchmark flo
 ## Notes
 
 - Generated outputs are ignored by Git, including `reports/`, `data/logs/`, and local database files.
+- The repository does not bundle training/evaluation datasets. Bring your own CSV files for evaluation and benchmarking.
 - The app can fall back to placeholder pages if optional dependencies are missing.
 - If the threat intel map is unavailable, install `cartopy` to enable the full map view.
