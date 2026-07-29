@@ -1,0 +1,282 @@
+[
+  {
+    "template": "Received disconnect from <*>: <*>: Bye Bye [preauth]",
+    "count": 413,
+    "samples": [
+      "Received disconnect from 52.80.34.196: 11: Bye Bye [preauth]",
+      "Received disconnect from 202.100.179.208: 11: Bye Bye [preauth]",
+      "Received disconnect from 112.95.230.3: 11: Bye Bye [preauth]"
+    ],
+    "suggested": 0,
+    "label": 0
+  },
+  {
+    "template": "pam_unix(sshd:auth): authentication failure; logname= uid=<*> euid=<*> tty=ssh ruser= rhost=<*> user=<*>",
+    "count": 384,
+    "samples": [
+      "pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=5.36.59.76.dynamic-dsl-ip.omantel.net.om  user=root",
+      "pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=112.95.230.3  user=root",
+      "pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=112.95.230.3  user=root"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "Failed password for <*> from <*> port <*> ssh2",
+    "count": 383,
+    "samples": [
+      "Failed password for root from 5.36.59.76 port 42393 ssh2",
+      "Failed password for root from 112.95.230.3 port 45378 ssh2",
+      "Failed password for root from 112.95.230.3 port 47068 ssh2"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "pam_unix(sshd:auth): check pass; user unknown",
+    "count": 135,
+    "samples": [
+      "pam_unix(sshd:auth): check pass; user unknown",
+      "pam_unix(sshd:auth): check pass; user unknown",
+      "pam_unix(sshd:auth): check pass; user unknown"
+    ],
+    "suggested": 0,
+    "label": 0
+  },
+  {
+    "template": "Failed password for invalid user <*> from <*> port <*> ssh2",
+    "count": 135,
+    "samples": [
+      "Failed password for invalid user webmaster from 173.234.31.186 port 38926 ssh2",
+      "Failed password for invalid user test9 from 52.80.34.196 port 36060 ssh2",
+      "Failed password for invalid user webmaster from 173.234.31.186 port 39257 ssh2"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "Invalid user <*> from <*>",
+    "count": 113,
+    "samples": [
+      "Invalid user webmaster from 173.234.31.186",
+      "Invalid user test9 from 52.80.34.196",
+      "Invalid user webmaster from 173.234.31.186"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "input_userauth_request: invalid user <*> [preauth]",
+    "count": 113,
+    "samples": [
+      "input_userauth_request: invalid user webmaster [preauth]",
+      "input_userauth_request: invalid user test9 [preauth]",
+      "input_userauth_request: invalid user webmaster [preauth]"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "pam_unix(sshd:auth): authentication failure; logname= uid=<*> euid=<*> tty=ssh ruser= rhost=<*>",
+    "count": 110,
+    "samples": [
+      "pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=173.234.31.186",
+      "pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=ec2-52-80-34-196.cn-north-1.compute.amazonaws.com.cn",
+      "pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=173.234.31.186"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "reverse mapping checking getaddrinfo for <*> [<*>] failed - POSSIBLE BREAK-IN ATTEMPT!",
+    "count": 85,
+    "samples": [
+      "reverse mapping checking getaddrinfo for ns.marryaldkfaczcz.com [173.234.31.186] failed - POSSIBLE BREAK-IN ATTEMPT!",
+      "reverse mapping checking getaddrinfo for ns.marryaldkfaczcz.com [173.234.31.186] failed - POSSIBLE BREAK-IN ATTEMPT!",
+      "reverse mapping checking getaddrinfo for 191-210-223-172.user.vivozap.com.br [191.210.223.172] failed - POSSIBLE BREAK-IN ATTEMPT!"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "error: Received disconnect from <*>: <*>: No more user authentication methods available. [preauth]",
+    "count": 45,
+    "samples": [
+      "error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]",
+      "error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]",
+      "error: Received disconnect from 103.99.0.122: 14: No more user authentication methods available. [preauth]"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "Connection closed by <*> [preauth]",
+    "count": 34,
+    "samples": [
+      "Connection closed by 173.234.31.186 [preauth]",
+      "Connection closed by 212.47.254.145 [preauth]",
+      "Connection closed by 173.234.31.186 [preauth]"
+    ],
+    "suggested": 0,
+    "label": 0
+  },
+  {
+    "template": "Did not receive identification string from <*>",
+    "count": 10,
+    "samples": [
+      "Did not receive identification string from 123.235.32.19",
+      "Did not receive identification string from 177.79.82.136",
+      "Did not receive identification string from 195.154.37.122"
+    ],
+    "suggested": 0,
+    "label": 0
+  },
+  {
+    "template": "Received disconnect from <*>: <*>: Closed due to user request. [preauth]",
+    "count": 7,
+    "samples": [
+      "Received disconnect from 103.207.39.165: 11: Closed due to user request. [preauth]",
+      "Received disconnect from 103.207.39.212: 11: Closed due to user request. [preauth]",
+      "Received disconnect from 103.207.39.212: 11: Closed due to user request. [preauth]"
+    ],
+    "suggested": 0,
+    "label": 0
+  },
+  {
+    "template": "PAM service(sshd) ignoring max retries; <*> > <*>",
+    "count": 7,
+    "samples": [
+      "PAM service(sshd) ignoring max retries; 6 > 3",
+      "PAM service(sshd) ignoring max retries; 5 > 3",
+      "PAM service(sshd) ignoring max retries; 5 > 3"
+    ],
+    "suggested": 0,
+    "label": 0
+  },
+  {
+    "template": "PAM <*> more authentication failures; logname= uid=<*> euid=<*> tty=ssh ruser= rhost=<*>",
+    "count": 6,
+    "samples": [
+      "PAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=5.188.10.180",
+      "PAM 4 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=5.188.10.180",
+      "PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=185.190.58.151"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "Failed none for invalid user <*> from <*> port <*> ssh2",
+    "count": 4,
+    "samples": [
+      "Failed none for invalid user 0 from 5.188.10.180 port 49811 ssh2",
+      "Failed none for invalid user admin from 5.188.10.180 port 52631 ssh2",
+      "Failed none for invalid user 0 from 185.190.58.151 port 55495 ssh2"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "PAM <*> more authentication failures; logname= uid=<*> euid=<*> tty=ssh ruser= rhost=<*>  user=root",
+    "count": 2,
+    "samples": [
+      "PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=5.36.59.76.dynamic-dsl-ip.omantel.net.om  user=root",
+      "PAM 5 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=106.5.5.195  user=root"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "error: Received disconnect from <*>: <*>: com.jcraft.jsch.JSchException: Auth fail [preauth]",
+    "count": 2,
+    "samples": [
+      "error: Received disconnect from 195.154.37.122: 3: com.jcraft.jsch.JSchException: Auth fail [preauth]",
+      "error: Received disconnect from 195.154.37.122: 3: com.jcraft.jsch.JSchException: Auth fail [preauth]"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "Disconnecting: Too many authentication failures for root [preauth]",
+    "count": 2,
+    "samples": [
+      "Disconnecting: Too many authentication failures for root [preauth]",
+      "Disconnecting: Too many authentication failures for root [preauth]"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "PAM <*> more authentication failure; logname= uid=<*> euid=<*> tty=ssh ruser= rhost=<*>",
+    "count": 2,
+    "samples": [
+      "PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=5.188.10.180",
+      "PAM 1 more authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=185.190.58.151"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "message repeated <*> times: [ Failed password for root from <*> port <*>]",
+    "count": 2,
+    "samples": [
+      "message repeated 5 times: [ Failed password for root from 5.36.59.76 port 42393 ssh2]",
+      "message repeated 5 times: [ Failed password for root from 106.5.5.195 port 50719 ssh2]"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "Accepted password for <*> from <*> port <*> ssh2",
+    "count": 1,
+    "samples": [
+      "Accepted password for fztu from 119.137.62.142 port 49116 ssh2"
+    ],
+    "suggested": 0,
+    "label": 0
+  },
+  {
+    "template": "pam_unix(sshd:session): session opened for user <*> by (uid=<*>)",
+    "count": 1,
+    "samples": [
+      "pam_unix(sshd:session): session opened for user fztu by (uid=0)"
+    ],
+    "suggested": 0,
+    "label": 0
+  },
+  {
+    "template": "Received disconnect from <*>: <*>: disconnected by user",
+    "count": 1,
+    "samples": [
+      "Received disconnect from 119.137.62.142: 11: disconnected by user"
+    ],
+    "suggested": 0,
+    "label": 0
+  },
+  {
+    "template": "pam_unix(sshd:session): session closed for user <*>",
+    "count": 1,
+    "samples": [
+      "pam_unix(sshd:session): session closed for user fztu"
+    ],
+    "suggested": 0,
+    "label": 0
+  },
+  {
+    "template": "Disconnecting: Too many authentication failures for admin [preauth]",
+    "count": 1,
+    "samples": [
+      "Disconnecting: Too many authentication failures for admin [preauth]"
+    ],
+    "suggested": 1,
+    "label": 1
+  },
+  {
+    "template": "fatal: Write failed: Connection reset by peer [preauth]",
+    "count": 1,
+    "samples": [
+      "fatal: Write failed: Connection reset by peer [preauth]"
+    ],
+    "suggested": 1,
+    "label": 1
+  }
+]

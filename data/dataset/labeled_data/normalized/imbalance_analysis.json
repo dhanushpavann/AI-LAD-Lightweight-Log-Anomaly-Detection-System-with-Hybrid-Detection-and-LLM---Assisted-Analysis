@@ -1,0 +1,74 @@
+{
+  "num_classes": 2,
+  "label_map": {
+    "0": "normal",
+    "1": "anomaly"
+  },
+  "original_label_map": {
+    "0": "normal",
+    "1": "security_anomaly",
+    "2": "system_failure",
+    "3": "performance_issue",
+    "4": "network_anomaly",
+    "5": "config_error",
+    "6": "hardware_issue"
+  },
+  "source_analysis": {
+    "Apache_2k_labeled": {
+      "present_classes": [
+        0,
+        1
+      ],
+      "missing_classes": [],
+      "class_counts": {
+        "0": 1461,
+        "1": 539
+      },
+      "total_samples": 2000,
+      "imbalance_ratio": 2.7105751391465676
+    },
+    "Linux_2k_labeled": {
+      "present_classes": [
+        0,
+        1
+      ],
+      "missing_classes": [],
+      "class_counts": {
+        "0": 1463,
+        "1": 537
+      },
+      "total_samples": 2000,
+      "imbalance_ratio": 2.7243947858473
+    },
+    "OpenSSH_2k_labeled": {
+      "present_classes": [
+        0,
+        1
+      ],
+      "missing_classes": [],
+      "class_counts": {
+        "0": 610,
+        "1": 1390
+      },
+      "total_samples": 2000,
+      "imbalance_ratio": 2.278688524590164
+    }
+  },
+  "class_availability": {
+    "0": [
+      "Apache_2k_labeled",
+      "Linux_2k_labeled",
+      "OpenSSH_2k_labeled"
+    ],
+    "1": [
+      "Apache_2k_labeled",
+      "Linux_2k_labeled",
+      "OpenSSH_2k_labeled"
+    ]
+  },
+  "recommendations": [
+    "\u2713 Data appears reasonably balanced for multi-class training",
+    "  \u2192 Still recommend using class weights and stratified sampling"
+  ],
+  "timestamp": "2026-02-03T10:50:08.403980"
+}
